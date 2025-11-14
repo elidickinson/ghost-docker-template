@@ -11,6 +11,7 @@ services:
       - ./ghost-data:/var/lib/ghost/content
     environment:
       NODE_ENV: ${NODE_ENV:-production}
+      url: ${URL:-http://localhost:2368/}
       database__client: sqlite3  # so we can use sqlite in production mode too
       database__connection__filename: '/var/lib/ghost/content/data/ghost.db'
       mail__transport: SMTP

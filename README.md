@@ -2,6 +2,8 @@
 
 Quickly get running with Ghost in a single docker container using an SQlite database. Suitable for local development or production hosting if the traffic volume isn't too high.
 
+According to `docker stats`, it only uses <200MB of RAM for a simple, low-traffic site.
+
 ## Quick Start
 
 ```bash
